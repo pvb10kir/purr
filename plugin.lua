@@ -23,7 +23,7 @@ function run(msg)
 	about_key = {{{text = "channel" , url = "http://telegram.me/blacklifetm"}},{{text = "Sphero channel" , url = "https://telegram.me/sphero_ch"}},{{text = "About Bot Team" , url = "https://telegram.me/sphero_bot"}},{{text = "MrBlackLife" , url = "https://telegram.me/MrBlackLife"}}}
 	start_txt = "خوش اومدید /* Welcome*\n👇انتخاب کنید"
 	start_key = {{{text="ساخت ربات پیام رسان",url="https://telegram.me/MrBlackLife"}}}
-	keyboard = {{"Chat reQ(درخواست چت)"},{{text="Send Your Contact",request_contact=true},{text="Send your Location",request_location=true}},{"My Contact","Send Your Sms","my About","Bot Version"..bot_version}}
+	keyboard = {{"ارسال درخواست چت"},{{text="ارسال شماره شما به من",request_contact=true},{text="ارسال مکان شما به من",request_location=true}},{"شماره من","ارسال پیامک به من"},{"بیوگرافی من","ربات نسخه"..bot_version}}
 	------------------------------------------------------------------------------------
 	blocks = load_data("blocks.json")
 	chats = load_data("chats.json")

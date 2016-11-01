@@ -1,7 +1,7 @@
 bot_token = "270366540:AAHJtCnhGcROh-Z9gLzJiE_Bo8KkPIR-odQ"
 send_api = "https://api.telegram.org/bot"..bot_token
 bot_version = "1.0"
-sudo_name = "Engineer Shayan Ahmadi"
+sudo_name = "#MrBlackLife"
 sudo_id = 255317894
 admingp = -154002345
 sudo_num = "989309649221"

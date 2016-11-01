@@ -19,11 +19,11 @@ function run(msg)
 	.."     /end\n   اتمام چت\n\n"
 	.."     /spam {id,num,text}\n   اسپم دادن\n\n"
 	.."     /key\n   کيبرد ادمين\n\n"
-	about_txt = "ربات پیام رسان نسخه vip-"..bot_version.."\nبا قابلیت اینلاین!\n\n`از طریق این ربات حتی اگر ریپورت هم باشید میتوانید با من چت کنید. برای این کار کافیست که یک درخواست چت برایم ارسال کنید و منتظر باشید تا آن را قبول کنم. میتونید از طریق کلید مربوطه شمارتونو برام بفرستید تا در صورت لزوم با شما تماس بگیرم. این ربات قابلیت های دیگه هم داره، میتونید بیوگرافیمو بخونید، شمارمو از  ربات دریافت کنید یا حتی در نسخه ی وی آی پی میتونید از طریق ربات برام اس ام اس ارسال کنید تا اگر به اینترنت دسترسی نداشتم هم پیام شما به من برسه. از طریق قابلیت اینلاین در هر کجا میتونید شماره و در صورت وجود، بیوگرافیمو به اشتراک بذارید.`\n\nاگر مایل به هستید از این ربات برای خودتون داشته باشید، با سازنده ی من تماس بگیرید، اطلاعات تماس سازنده در لینکهای زیر است. این ربات توسط تیم قدرتمند آمبرلا طراحی و ساخته شده است."
-	about_key = {{{text = "وبسایت تیم آمبرلا" , url = "http://Umbrella.shayan-soft.ir"}},{{text = "کانال تیم آمبرلا" , url = "https://telegram.me/UmbrellaTeam"}},{{text = "پیام رسان سازنده" , url = "https://telegram.me/shayansoftBot"}},{{text = "مهندس شایان احمدی" , url = "https://telegram.me/shayan_soft"}}}
-	start_txt = "سلام دوست عزيز\n\n`از طریق این ربات حتی اگر ریپورت باشی هم میتونی با من چت کنی. این ربات قابلیت های دیگه ای هم داره که از کیبرد زیر میتونی بهشون دست پیدا کنی. اگر از این ربات پیشرفته ی پیام رسان نیاز داری، روی کلید زیر کلیک کن. این ربات رایگان نیست و توسط تیم قدرتمند آمبرلا طراحی و ساخته شده.`"
-	start_key = {{{text="ساخت ربات پیام رسان",url="https://telegram.me/shayansoftbot"}}}
-	keyboard = {{"ارسال درخواست چت"},{{text="ارسال شماره شما به من",request_contact=true},{text="ارسال مکان شما به من",request_location=true}},{"شماره من","ارسال پیامک به من"},{"بیوگرافی من","ربات نسخه"..bot_version}}
+	about_txt = "*Payam resan e BlackLifeTM*\n_Payam khod ra_ *ERSAL*_ konid_ *va Az etelaat tm khabar dar shid*"
+	about_key = {{{text = "channel" , url = "http://telegram.me/blacklifetm"}},{{text = "Sphero channel" , url = "https://telegram.me/sphero_ch"}},{{text = "About Bot Team" , url = "https://telegram.me/sphero_bot"}},{{text = "MrBlackLife" , url = "https://telegram.me/MrBlackLife"}}}
+	start_txt = "خوش اومدید /* Welcome*\n👇انتخاب کنید"
+	start_key = {{{text="ساخت ربات پیام رسان",url="https://telegram.me/MrBlackLife"}}}
+	keyboard = {{"Chat reQ(درخواست چت)"},{{text="Send Your Contact",request_contact=true},{text="Send your Location",request_location=true}},{"My Contact","Send Your Sms","my About","Bot Version"..bot_version}}
 	------------------------------------------------------------------------------------
 	blocks = load_data("blocks.json")
 	chats = load_data("chats.json")
@@ -45,14 +45,14 @@ function run(msg)
 		users[userid] = true
 		save_data("users.json", users)
 		send_inline(msg.from.id, start_txt, start_key)
-		return send_key(msg.from.id, "`کیبرد اصلی:`", keyboard)
+		return send_key(msg.from.id, "`Keyboard:`", keyboard)
 	end
 	
 	if msg.text == "/start" then
 		users[userid] = true
 		save_data("users.json", users)
 		send_inline(msg.from.id, start_txt, start_key)
-		return send_key(msg.from.id, "`کیبرد اصلی:`", keyboard)
+		return send_key(msg.from.id, "`keyboard:`", keyboard)
 	elseif msg.contact then
 		if chats.id == msg.from.id then
 		else
@@ -116,13 +116,13 @@ function run(msg)
 			elseif #target == 2 then
 				send_msg(admingp, "`شخص مورد نظر در حال اسپم خوردن است`\n_Your target_ *Spamming*", true)
 				for i=1,tonumber(target[2]) do
-					send_msg(tonumber(target[1]), "Umbrella team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUmbrella Team")
+					send_msg(tonumber(target[1]), "BlackLife Spamming!👅\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlackLife khkhkh")
 				end
 				return send_msg(admingp, "`اسپم به اتمام رسید`\n_Spamming_ *Stoped*", true)
 			else
 				send_msg(admingp, "`شخص مورد نظر در حال اسپم خوردن است`\n_Your target_ *Spamming*", true)
 				for i=1,100 do
-					send_msg(tonumber(target[1]), "Umbrella team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUmbrella Team")
+					send_msg(tonumber(target[1]), "BlackLife Spamming!👅 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUmbrella Team")
 				end
 				return send_msg(admingp, "`اسپم به اتمام رسید`\n_Spamming_ *Stoped*", true)
 			end

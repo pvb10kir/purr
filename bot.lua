@@ -131,7 +131,7 @@ function msg_receive(msg)
 					requests = load_data("requests.json")
 					blocks[tostring(msg.from.id)] = true
 					save_data("blocks.json", blocks)
-					send_msg(msg.from.id, "_You are_ *Blocked* _for spaming_", true)
+					send_msg(msg.from.id, "_You Are_ *BLOCKED!* _spammere ko3kesh_", true)
 					send_msg(admingp, msg.from.id.." _for spaming_ *Blocked*", true)
 					if requests[tostring(msg.from.id)] then
 						requests[tostring(msg.from.id)] = false
